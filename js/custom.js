@@ -187,4 +187,19 @@ $(function () {
   });
 
 });
+
+if ('geolocation' in navigator) {
+  // Code for using geolocation API
+} else {
+  // Fallback code for browsers that do not support geolocation
+}
+if (navigator.userAgentData) {
+  const userAgentData = navigator.userAgentData;
+  const brand = userAgentData.brands[0].brand;
+  const version = userAgentData.brands[0].version;
+  console.log(`Browser: ${brand}, Version: ${version}`);
+} else {
+  // Fallback code for browsers that do not support userAgentData
+}
+
 /**************************Festival Effects****************************/
