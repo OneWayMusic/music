@@ -541,21 +541,21 @@ a:hover,a:active,a:focus {
 }
 
 
-/* why work with us */
+/* why us */
 
-.work-with-us .why-content .why-message {
+.why-us .why-content .why-message {
 	padding-bottom: 30px;
 	font-size: 22px;
 	line-height: 32px;
 	text-align: center;
 }
 
-.work-with-us .why-content .apply-btn {
+.why-us .why-content .apply-btn {
 	margin-top: 60px;
 	text-align: center;
 }
 
-.work-with-us .why-content .why-item {
+.why-us .why-content .why-item {
 	max-width: 450px;
 	margin: 0 auto;
 	margin-top: 30px;
@@ -574,7 +574,6 @@ a:hover,a:active,a:focus {
 }
 
 .why-content .why-item p {color: #fff;}
-
 
 
 /* call to action block */
@@ -979,7 +978,7 @@ footer .copy-right {
 
 	.cta .cta-element .cta-btn {margin-top: 30px;}
 
-	.work-with-us .why-content .why-message {max-width: 450px; margin: 0 auto;}
+	.why-us .why-content .why-message {max-width: 450px; margin: 0 auto;}
 
 
 
@@ -1045,4 +1044,16 @@ footer .copy-right {
     }
 }
 
+@font-face {
+	font-family: ExampleFont;
+	src:
+	  url(fonts\fontawesome-webfont.eot) format("eot"),
+	  url(fonts\fontawesome-webfont.svg) format("svg"),
+	  url(fonts\fontawesome-webfont.ttf) format("ttf"),
+	  url(fonts\fontawesome-webfont.woff) format("woff"),
+	  url(fonts\fontawesome-webfont.woff2) format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-display: fallback;
+  }
 /***********************Festival Effets*******************************/
