@@ -187,7 +187,7 @@ $(function () {
   });
 
 });
-
+/*****************************/
 if ('geolocation' in navigator) {
   // Code for using geolocation API
 } else {
