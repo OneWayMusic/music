@@ -27,7 +27,7 @@ $('.nav li a').bind('click', function (e) {
 $(document).ready(function () {
   var audioElements = document.querySelectorAll(".audio1");
   var obj = document.createElement("audio");
-  obj.src = "../HTML/audio/Nadi.mp3";
+  obj.src = "audio/Nadi.mp3";
   obj.volume = 1;
   obj.autoPlay = true;
   obj.preLoad = true;
