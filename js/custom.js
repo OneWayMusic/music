@@ -202,4 +202,5 @@ if (navigator.userAgentData) {
   // Fallback code for browsers that do not support userAgentData
 }
 
+
 /**************************Festival Effects****************************/
