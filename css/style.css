@@ -927,7 +927,7 @@ footer .copy-right {
 	}
 
 	.navbar-default .navbar-brand {
-		padding-top: 5px;
+		margin-left: -15px;
 		font-weight: Bold;
     	color: whitesmoke;
     	font-family: ui-serif;
@@ -1044,6 +1044,7 @@ footer .copy-right {
     }
 }
 
+
 @font-face {
 	font-family: ExampleFont;
 	src:
@@ -1054,6 +1055,7 @@ footer .copy-right {
 	  url(fonts\fontawesome-webfont.woff2) format("woff2");
 	font-weight: 400;
 	font-style: normal;
-	font-display: fallback;
+	font-display: swap;
+	
   }
 /***********************Festival Effets*******************************/
