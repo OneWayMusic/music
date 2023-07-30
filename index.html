@@ -1033,7 +1033,26 @@
 					</form>
 
 				</div>
-
+				<script>
+					function submitForm() {
+						const form = document.getElementById("contactForm");
+						const formData = new FormData(form);
+				
+						fetch("https://onewaymusic.github.io/music//secure_form_handler.php", {
+							method: "POST",
+							body: JSON.stringify(Object.fromEntries(formData)),
+							headers: {
+								"Content-Type": "application/json"
+							}
+						})
+						.then(response => {
+							// Handle the server response if needed
+						})
+						.catch(error => {
+							// Handle errors if any
+						});
+					}
+				</script>
 			</div>
 		</div>
 		<!-- contact end -->
