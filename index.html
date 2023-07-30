@@ -57,8 +57,7 @@
 						<strong>Phone</strong>:&nbsp; <a href="tel:9939404974"
 							alt="call 9939404974">9939404974</a>&nbsp;&nbsp;&nbsp;&nbsp;
 						<strong>E-mail</strong>:&nbsp; <a
-							href="mailto:Onewaymusic20@gmail.com" method="post"
-							enctype="text/plain">Onewaymusic20@gmail.com</a>
+							href="mailto:Onewaymusic20@gmail.com">Onewaymusic20@gmail.com</a>
 					</div>
 					<!-- secondary menu right link area -->
 					<div class="sm-right">
@@ -998,8 +997,8 @@
 				<div class="form-content ">
 					<!-- paragraph -->
 					<p>Do you have any idea in your mind? Drop us a line.</p>
-					<form role="form" id="contactForm" action="mailto:Onewaymusic20@gmail.com" method="post"
-						enctype="text/plain">
+					<form role="form" id="contactForm" action="https://formspree.io/f/xrgweeve" method="post">
+					
 						<div class="row">
 							<div class="col-md-6 col-sm-6">
 								<div class="form-group">
@@ -1036,21 +1035,8 @@
 				<script>
 					function submitForm() {
 						const form = document.getElementById("contactForm");
-						const formData = new FormData(form);
-				
-						fetch("https://onewaymusic.github.io/music//secure_form_handler.php", {
-							method: "POST",
-							body: JSON.stringify(Object.fromEntries(formData)),
-							headers: {
-								"Content-Type": "application/json"
-							}
-						})
-						.then(response => {
-							// Handle the server response if needed
-						})
-						.catch(error => {
-							// Handle errors if any
-						});
+						form.submit(); // This will submit the form to the Formspree endpoint
+						// You can also display a success message or perform other actions here
 					}
 				</script>
 			</div>
