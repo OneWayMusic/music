@@ -120,6 +120,27 @@ $(document).ready(function () {
   });
 });
 
+/***********************/
+// Function to set/update a cookie
+function setCookie(name, value, days) {
+  let expires = '';
+  if (days) {
+    const date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    expires = '; expires=' + date.toUTCString();
+  }
+  document.cookie = name + '=' + (value || '')  + expires + '; path=/; SameSite=None; Secure';
+}
+
+// Example usage:
+setCookie('SID', 'your-sid-value', 30);
+setCookie('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3586.3108303686877!2d85.311682415033!3d23.360376884791246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3cafd21c3b8b47b3%3A0xf482776c3e79903b!2sHatia%2C%20Ranchi%2C%20Jharkhand%20830023%2C%20India!5e0!3m2!1sen!2sin!4v1627831929873!5m2!1sen!2sin', 30);
+// Set other cookies in a similar manner
+
+
+
+
+
 
 
 
@@ -201,6 +222,5 @@ if (navigator.userAgentData) {
 } else {
   // Fallback code for browsers that do not support userAgentData
 }
-
 
 /**************************Festival Effects****************************/
