@@ -823,7 +823,22 @@ a:hover,a:active,a:focus {
 	margin-top: 30px;
 	display: none;
 }
-
+/* CSS for responsive map */
+#google-map .map-responsive {
+	overflow: hidden;
+	padding-bottom: 56.25%; /* 16:9 aspect ratio (for 100% width) */
+	position: relative;
+	height: 0;
+  }
+  
+  #google-map .map-responsive iframe {
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+  }
+  
 /* footer */
 footer {
 	padding-top: 50px;
