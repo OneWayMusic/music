@@ -1014,7 +1014,213 @@ footer .copy-right {
 
 @media (max-width: 1100px){
 }
+/***********************video html************************************/
+/* Add your custom styles for the video section */
+#video-section {
+    background-image: url('https://onewaymusic.github.io/music/img/promo/t6.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+}
 
+.video-box {
+    position: relative;
+    margin-bottom: 30px; /* Add spacing between videos */
+}
+
+.youtube-video {
+    border: none;
+}
+
+.video-content {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.video-box:hover .video-content {
+    opacity: 1;
+}
+
+/* Add your animations using @keyframes rule */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@font-face {
+	font-family: ExampleFont;
+	src:
+	  url(fonts\fontawesome-webfont.eot) format("eot"),
+	  url(fonts\fontawesome-webfont.svg) format("svg"),
+	  url(fonts\fontawesome-webfont.ttf) format("ttf"),
+	  url(fonts\fontawesome-webfont.woff) format("woff"),
+	  url(fonts\fontawesome-webfont.woff2) format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	
+  }
+/* Video section styles */
+.video-section {
+	padding: 100px 0;
+	/* Change this to your desired background color */
+  }
+  
+  .video-thumbnail {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	margin-bottom: 10px; /* Adjust this value to control the spacing between video thumbnails */
+  }
+  
+  .video-thumbnail img {
+	width: 100%;
+	height: auto;
+	transition: transform 0.3s ease;
+  }
+  
+  .video-thumbnail:hover img {
+	transform: scale(1.1);
+  }
+  
+  .play-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	font-size: 80px;
+	opacity: 0.8;
+	visibility: hidden;
+  }
+  
+  .video-thumbnail:hover .play-icon {
+	visibility: visible;
+  }
+  
+  /**************Event section*******************/
+  /* Updated event section styles */
+.event-section {
+    background-color: white;
+    padding: 80px 0;
+}
+
+.event-item {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.event-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.event-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.event-date {
+    text-align: center;
+    padding: 10px;
+    background-color: #e10510;
+    color: #fff;
+}
+
+.event-date .day {
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+}
+
+.event-date .month {
+    font-size: 18px;
+    display: block;
+}
+
+.event-info h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.event-info p {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.event-info a.btn {
+    background-color: #e10510;
+    color: #fff;
+    border-color: #e10510;
+}
+
+.event-info a.btn:hover {
+    background-color: #d12323;
+    border-color: #d12323;
+}
+
+ /******************Gallery********************/
+ /* Gallery section styling */
+.gallery {
+    background-color: #f8f8f8;
+    padding: 60px 0;
+}
+
+.gallery-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.fade-in {
+    animation: zoomIn 0.6s ease forwards;
+}
 
 
 
