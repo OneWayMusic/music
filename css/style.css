@@ -410,7 +410,7 @@ a:hover,a:active,a:focus {
 
 .playlist-content .playlist-number {
     margin-bottom: 20px; /* Increased margin for better spacing */
-    .playlist-content .playlist-numberpadding: 15px 25px; /* Adjusted padding for better spacing */
+    padding: 15px 25px; /* Adjusted padding for better spacing */
     background: #fff; /* White background */
     border: 1px solid #ddd;
     border-radius: 5px; /* Rounded corners */
@@ -443,7 +443,6 @@ a:hover,a:active,a:focus {
 .audio1 {
     width: 100%;
 }
-
 
 /* promo */
 
@@ -1015,62 +1014,8 @@ footer .copy-right {
 
 @media (max-width: 1100px){
 }
-/***********************video html************************************/
-/* Add your custom styles for the video section */
-#video-section {
-    background-image: url('https://onewaymusic.github.io/music/img/promo/t6.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 50px 0;
-}
-
-.video-box {
-    position: relative;
-    margin-bottom: 30px; /* Add spacing between videos */
-}
-
-.youtube-video {
-    border: none;
-}
-
-.video-content {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    color: #fff;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.video-box:hover .video-content {
-    opacity: 1;
-}
-
-/* Add your animations using @keyframes rule */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
 
-@font-face {
-	font-family: ExampleFont;
-	src:
-	  url(fonts\fontawesome-webfont.eot) format("eot"),
-	  url(fonts\fontawesome-webfont.svg) format("svg"),
-	  url(fonts\fontawesome-webfont.ttf) format("ttf"),
-	  url(fonts\fontawesome-webfont.woff) format("woff"),
-	  url(fonts\fontawesome-webfont.woff2) format("woff2");
-	font-weight: 400;
-	font-style: normal;
-	font-display: swap;
-	
-  }
 
 
 
