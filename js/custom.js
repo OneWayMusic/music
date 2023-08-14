@@ -1,4 +1,4 @@
-
+alert("Happy 77th Independence Day!");
 
 /* navigation menu animation with way points */
 
