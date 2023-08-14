@@ -409,42 +409,41 @@ a:hover,a:active,a:focus {
 }
 
 .playlist-content .playlist-number {
-	margin-bottom: 10px;
-	padding: 10px 43px;
-	background: #fafafa;
-	border: 1px solid #ddd;
-
+    margin-bottom: 20px; /* Increased margin for better spacing */
+    .playlist-content .playlist-numberpadding: 15px 25px; /* Adjusted padding for better spacing */
+    background: #fff; /* White background */
+    border: 1px solid #ddd;
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.3s, box-shadow 0.3s; /* Added transitions */
 }
 
-.playlist-content .playlist-number .song-info {
-	float: left;
+.playlist-content .playlist-number:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Bigger shadow on hover */
 }
 
-.playlist-content .playlist-number .song-info h4 {
-	margin-top: 5px;
-	margin-bottom: 5px;
-	font-size: 15px;
-}
-.playlist-content .playlist-number .song-info p {
-	font-size: 12px;
-	font-style: italic;
+/* Rest of the styles remain unchanged */
+
+/* Add CSS animation */
+.hero-playlist.animate .playlist-number {
+    opacity: 1;
+    transform: translateY(0);
 }
 
-.playlist-content .playlist-number .music-icon {float: right;}
-.playlist-content .playlist-number .music-icon a {
-	display: inline-block;
-	width: 30px;
-	height: 45px;
-	line-height: 45px;
-	font-size: 20px;
-	text-align: center;
+/* Optional animation for audio icon */
+.music-icon a {
+    transition: transform 0.3s; /* Added transition */
 }
 
-.audio1{
-	margin-right: -30px;
-	width: 300px;
-
+.music-icon a:hover {
+    transform: scale(1.1); /* Slightly scale up on hover */
 }
+
+.audio1 {
+    width: 100%;
+}
+
 
 /* promo */
 
