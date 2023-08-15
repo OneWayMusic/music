@@ -1222,29 +1222,7 @@ footer .copy-right {
     animation: zoomIn 0.6s ease forwards;
 }
 
-/*************Independence Day*************/
-.independence-day-alert {
-	display: grid;
-	align-items: center;
-	background-color: green;
-	color: white;
-	padding: 10px;
-	border-radius: 5px;
-	font-size: 18px;
-  }
-  .independence-day-alert p{
-	  text-align: center;
-	  font-family: fangsong;
-	  font-size: 20px;
-  }
-  
-  .flag-color {
-	height: 500px; /* Adjust the height as per your requirement */
-	background: url('../img/flag/f1.jpg') fixed 35%;
-	background-size: cover;
-	background-position: center;
-  }
-  
+
   
   
 
