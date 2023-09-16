@@ -1,5 +1,6 @@
 
 
+
 /* navigation menu animation with way points */
 
 $('.nav-animate').waypoint(function (direction) {
@@ -208,6 +209,13 @@ $(function () {
   });
 
 });
+// Smooth scrolling to the top when the button is clicked
+document.getElementById("back-to-top").addEventListener("click", function () {
+  window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+  });
+});
 /*****************************/
 if ('geolocation' in navigator) {
   // Code for using geolocation API
@@ -218,9 +226,28 @@ if (navigator.userAgentData) {
   const userAgentData = navigator.userAgentData;
   const brand = userAgentData.brands[0].brand;
   const version = userAgentData.brands[0].version;
-  console.log(`Browser: ${brand}, Version: ${version}`);
+  console.log(`Browser: One Way Muic, Version: ${version}`);
 } else {
   // Fallback code for browsers that do not support userAgentData
 }
+
+/**************Videos*************/
+// Function to handle closing the video modal
+function closeVideoModal() {
+  const youtubeVideo = document.getElementById('youtubeVideo');
+  youtubeVideo.src = ''; // Pause the video by setting the src to an empty string
+  $('#videoModal').modal('hide');
+  // Stop video playback when the modal is closed
+  if (youtubePlayer && youtubePlayer.pauseVideo) {
+      youtubePlayer.pauseVideo();
+  }
+}
+
+// Attach event to modal close button to stop video playback and close the modal
+$('#videoModal').on('hidden.bs.modal', function () {
+  closeVideoModal();
+});
+
+
 
 /**************************Festival Effects****************************/
