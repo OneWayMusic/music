@@ -1,6 +1,5 @@
 
 
-
 /* navigation menu animation with way points */
 
 $('.nav-animate').waypoint(function (direction) {
